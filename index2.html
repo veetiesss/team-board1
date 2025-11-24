@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="page"><a class="pagename" href="index.html">Dashboard</a></div>
+            <div class="page"><a class="pagename" href="index1.html">Ankündigungen</a></div>
+            <div class="page"><a class="pagename" href="index2.html">Umfragen</a></div>
+        </nav>
+        <div class="surveys">
+            <h2 class="surveystitle">Aktive Umfragen: </h2>
+                <div class="allsurveys">
+                <div class="survey">
+                    <h2 class="surveytitle">Über Sie</h2>
+                    <form class="survey1">
+                        <h2>Ihr Geschlecht:</h2>
+                        <label><input type="radio" name="gender" value="male">männlich</label>
+                        <label><input type="radio" name="gender" value="female">weiblich</label>
+                        <h2>Ihr Alter:</h2>
+                        <input type="number">
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results1" class="results">Ergebnisse:</ul>
+                </div>
+                <div class="survey">
+                    <h2 class="surveytitle">Bildschirmzeit</h2>
+                    <form class="survey2">
+                        <h2>Wie viel Zeit verbringst du in Gadgets?</h2>
+                        <label><input type="radio" name="screentime" value="onetwohour">1-2 Stunden</label>
+                        <label><input type="radio" name="screentime" value="threefivehour">3-5 Stunden</label>
+                        <label><input type="radio" name="screentime" value="sixeighthour">6-8 Stunden</label>
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results2" class="results">Ergebnisse:</ul>
+                </div>
+                <div class="survey">
+                    <h2 class="surveytitle">Umwelt- und <br>Klimaschutz</h2>
+                    <form class="survey3">
+                        <h2>Wie wichtig ist dir Umwelt- und Klimaschutz?</h2>
+                        <label><input type="radio" name="eko" value="veryimportant">Sehr wichtig</label>
+                        <label><input type="radio" name="eko" value="important">Wichtig</label>
+                        <label><input type="radio" name="eko" value="neutral">Neutral</label>
+                        <label><input type="radio" name="eko" value="lessimportant">Weniger wichtig</label>
+                        <label><input type="radio" name="eko" value="notimportant">Überhaupt nicht wichtig</label>
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results3" class=" results">Ergebnisse:</ul>
+                </div>
+                <div class="survey">
+                    <h2 class="surveytitle">Social Media</h2>
+                    <form class="survey4">
+                        <h2>Stimmst du der Aussage zu: "Social Media beeinflusst unseren Alltag stark"?</h2>
+                        <label><input type="radio" name="media" value="totallyagree">Stimme voll zu</label>
+                        <label><input type="radio" name="media" value="agree">Stimme zu</label>
+                        <label><input type="radio" name="media" value="neutral">Neutral</label>
+                        <label><input type="radio" name="media" value="disagree">Stimme nicht zu</label>
+                        <label><input type="radio" name="media" value="totallydisagree">Stimme überhaupt nicht zu</label>
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results4" class=" results">Ergebnisse:</ul>
+                </div>
+                <div class="survey">
+                    <h2 class="surveytitle">Schule/Arbeit</h2>
+                    <form class="survey5">
+                        <h2>Meinst du, dass Schule/Arbeit genug auf praktische Fähigkeiten vorbereitet?</h2>
+                        <label><input type="radio" name="practice" value="absolutelyyes">Ja, absolut</label>
+                        <label><input type="radio" name="practice" value="mostlyyes">Meistens ja</label>
+                        <label><input type="radio" name="practice" value="neutral">Neutral</label>
+                        <label><input type="radio" name="practice" value="mostlyno">Meistens nein</label>
+                        <label><input type="radio" name="practice" value="absolutelyno">Nein, überhaupt nicht</label>
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results5" class=" results">Ergebnisse:</ul>
+                </div>
+                <div class="survey">
+                    <h2 class="surveytitle">Freizeitaktivität</h2>
+                    <form class="survey6">
+                        <h2>Welche Freizeitaktivität bevorzugst du?</h2>
+                        <label><input type="radio" name="freetime" value="sport">Sport treiben</label>
+                        <label><input type="radio" name="freetime" value="reading">Lesen</label>
+                        <label><input type="radio" name="freetime" value="videogames">Videospiele</label>
+                        <label><input type="radio" name="freetime" value="films">Filme anschauen</label>
+                        <label><input type="radio" name="freetime" value="friends">Freunde treffen</label>
+                        <button type="submit">Abstimmen</button>
+                    </form>
+                    <ul id="results6" class=" results">Ergebnisse:</ul>
+                </div>
+                
+                </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

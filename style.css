@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 25vw;
+    height: 100px;
+}
+.pagename{
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+}
+body{
+    background-color: black;
+}
+.allnews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.newimg{
+    width: 20vw;
+}
+.new{
+    width: 30vw;
+    font-size: 1vw;
+}
+.newtime, .newcontent{
+    font-weight: 300;
+}
+.hidden{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+}
+button{
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+.allsurveys{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7vw;
+    font-size: 1vw;
+}
+.results{
+    font-size: 2vw;
+    padding: 0;
+}
+
