@@ -12,6 +12,19 @@ const screwloosetime = 2211
 const dahlmeiersdeathtime = 1911
 const afdtime = 2411
 
+let arr1 = [pensionpackagetime, solarshocktime, difficultdesiciontime, screwloosetime, dahlmeiersdeathtime, afdtime]
+
+let arr2 = [pensionpackage, solarshock, difficultdesicion, screwloose, dahlmeiersdeath, afd]
+
+let indices = arr1.map((value, index) => index)
+indices.sort((i, j) => arr1[j] - arr1[i])
+
+let sortedElements = indices.map(i => arr2[i]) 
+
+sortedElements[0].classList.remove("hidden")
+sortedElements[1].classList.remove("hidden")
+sortedElements[2].classList.remove("hidden")
+
 
 
 
@@ -183,20 +196,5 @@ survey6.addEventListener("submit", function(e){
     displayResults6()
 
 })
-
-let arr1 = [pensionpackagetime, solarshocktime, difficultdesiciontime, screwloosetime, dahlmeiersdeathtime, afdtime]
-
-let arr2 = [pensionpackage, solarshock, difficultdesicion, screwloose, dahlmeiersdeath, afd]
-
-let indices = arr1.map((value, index) => index)
-indices.sort((i, j) => arr1[j] - arr1[i])
-
-let sortedElements = indices.map(i => arr2[i]) 
-
-sortedElements[0].classList.remove("hidden")
-sortedElements[1].classList.remove("hidden")
-sortedElements[2].classList.remove("hidden")
-
-
 
 
