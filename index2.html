@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pirata+One&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -13,11 +22,32 @@
             <div class="page"><a class="pagename" href="index1.html">Ankündigungen</a></div>
             <div class="page"><a class="pagename" href="index2.html">Umfragen</a></div>
         </nav>
+        <header>
+            <h1 class="sitename">TEAM-BOARD</h1>
+        </header>
+
+        <div class="pensionpackage hidden"></div>
+        <div class="solarshock hidden"></div>
+        <div class="difficultdesicion hidden"></div>
+        <div class="screwloose hidden"></div>
+        <div class="dahlmeiersdeath hidden"></div>
+        <div class="afd hidden"></div>
+        <div class="womanmurder hidden"></div>
+        <div class="zimmermanndeath hidden"></div>
+        <div class="shedsfire hidden"></div>
+        <div class="dojacat hidden"></div>
+        <div class="china hidden"></div>
+        <div class="bayern hidden"></div>
+
         <div class="surveys">
-            <h2 class="surveystitle">Aktive Umfragen: </h2>
-                <div class="allsurveys">
+            <h2 class="surveystitle"></h2>
+            <div class="surveyslist">
+
+            </div>
+            <div class="allsurveys">
+
                 <div class="survey">
-                    <h2 class="surveytitle">Über Sie</h2>
+                    <h2 class="surveytitle surveytitle1">Über Sie</h2>
                     <form class="survey1">
                         <h2>Ihr Geschlecht:</h2>
                         <label><input type="radio" name="gender" value="male">männlich</label>
@@ -28,8 +58,9 @@
                     </form>
                     <ul id="results1" class="results">Ergebnisse:</ul>
                 </div>
+
                 <div class="survey">
-                    <h2 class="surveytitle">Bildschirmzeit</h2>
+                    <h2 class="surveytitle surveytitle2">Bildschirmzeit</h2>
                     <form class="survey2">
                         <h2>Wie viel Zeit verbringst du in Gadgets?</h2>
                         <label><input type="radio" name="screentime" value="onetwohour">1-2 Stunden</label>
@@ -39,8 +70,9 @@
                     </form>
                     <ul id="results2" class="results">Ergebnisse:</ul>
                 </div>
+
                 <div class="survey">
-                    <h2 class="surveytitle">Umwelt- und <br>Klimaschutz</h2>
+                    <h2 class="surveytitle surveytitle3">Umwelt- und <br>Klimaschutz</h2>
                     <form class="survey3">
                         <h2>Wie wichtig ist dir Umwelt- und Klimaschutz?</h2>
                         <label><input type="radio" name="eko" value="veryimportant">Sehr wichtig</label>
@@ -50,10 +82,11 @@
                         <label><input type="radio" name="eko" value="notimportant">Überhaupt nicht wichtig</label>
                         <button type="submit">Abstimmen</button>
                     </form>
-                    <ul id="results3" class=" results">Ergebnisse:</ul>
+                    <ul id="results3" class="results">Ergebnisse:</ul>
                 </div>
+
                 <div class="survey">
-                    <h2 class="surveytitle">Social Media</h2>
+                    <h2 class="surveytitle surveytitle4">Social Media</h2>
                     <form class="survey4">
                         <h2>Stimmst du der Aussage zu: "Social Media beeinflusst unseren Alltag stark"?</h2>
                         <label><input type="radio" name="media" value="totallyagree">Stimme voll zu</label>
@@ -63,10 +96,11 @@
                         <label><input type="radio" name="media" value="totallydisagree">Stimme überhaupt nicht zu</label>
                         <button type="submit">Abstimmen</button>
                     </form>
-                    <ul id="results4" class=" results">Ergebnisse:</ul>
+                    <ul id="results4" class="results">Ergebnisse:</ul>
                 </div>
+
                 <div class="survey">
-                    <h2 class="surveytitle">Schule/Arbeit</h2>
+                    <h2 class="surveytitle surveytitle5">Schule/Arbeit</h2>
                     <form class="survey5">
                         <h2>Meinst du, dass Schule/Arbeit genug auf praktische Fähigkeiten vorbereitet?</h2>
                         <label><input type="radio" name="practice" value="absolutelyyes">Ja, absolut</label>
@@ -76,10 +110,11 @@
                         <label><input type="radio" name="practice" value="absolutelyno">Nein, überhaupt nicht</label>
                         <button type="submit">Abstimmen</button>
                     </form>
-                    <ul id="results5" class=" results">Ergebnisse:</ul>
+                    <ul id="results5" class="results">Ergebnisse:</ul>
                 </div>
+
                 <div class="survey">
-                    <h2 class="surveytitle">Freizeitaktivität</h2>
+                    <h2 class="surveytitle surveytitle6">Freizeitaktivität</h2>
                     <form class="survey6">
                         <h2>Welche Freizeitaktivität bevorzugst du?</h2>
                         <label><input type="radio" name="freetime" value="sport">Sport treiben</label>
@@ -89,14 +124,13 @@
                         <label><input type="radio" name="freetime" value="friends">Freunde treffen</label>
                         <button type="submit">Abstimmen</button>
                     </form>
-                    <ul id="results6" class=" results">Ergebnisse:</ul>
+                    <ul id="results6" class="results">Ergebnisse:</ul>
                 </div>
-                
-                </div>
-        </div>
-        </div>
+
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
