@@ -4,6 +4,12 @@ const difficultdesicion = document.querySelector(".difficultdesicion")
 const screwloose = document.querySelector(".screwloose")
 const dahlmeiersdeath = document.querySelector(".dahlmeiersdeath")
 const afd = document.querySelector(".afd")
+const womanmurder = document.querySelector(".womanmurder")
+const zimmermanndeath = document.querySelector(".zimmermanndeath")
+const shedsfire = document.querySelector(".shedsfire")
+const dojacat = document.querySelector(".dojacat")
+const china = document.querySelector(".china")
+const bayern = document.querySelector(".bayern")
 
 const pensionpackagetime = 2411
 const solarshocktime = 2211
@@ -11,10 +17,18 @@ const difficultdesiciontime = 2111
 const screwloosetime = 2211
 const dahlmeiersdeathtime = 1911
 const afdtime = 2411
+const womanmurdertime = 2511
+const zimmermanndeathtime = 2411
+const shedsfiretime = 2511
+const dojacattime = 2411
+const chinatime = 2511
+const bayerntime = 2511
 
-let arr1 = [pensionpackagetime, solarshocktime, difficultdesiciontime, screwloosetime, dahlmeiersdeathtime, afdtime]
+console.log(pensionpackage,solarshock,difficultdesicion,screwloose,dahlmeiersdeath,afd,womanmurder,zimmermanndeath,shedsfire,dojacat,china,bayern )
 
-let arr2 = [pensionpackage, solarshock, difficultdesicion, screwloose, dahlmeiersdeath, afd]
+let arr1 = [pensionpackagetime, solarshocktime, difficultdesiciontime, screwloosetime, dahlmeiersdeathtime, afdtime, womanmurdertime, zimmermanndeathtime, shedsfiretime, dojacattime, chinatime, bayerntime]
+
+let arr2 = [pensionpackage, solarshock, difficultdesicion, screwloose, dahlmeiersdeath, afd, womanmurder, zimmermanndeath, shedsfire, dojacat, china, bayern]
 
 let indices = arr1.map((value, index) => index)
 indices.sort((i, j) => arr1[j] - arr1[i])
@@ -25,9 +39,21 @@ sortedElements[0].classList.remove("hidden")
 sortedElements[1].classList.remove("hidden")
 sortedElements[2].classList.remove("hidden")
 
+const surveystitle = document.querySelector(".surveystitle")
 
+let surveysammount = 6
+surveystitle.innerHTML=`Aktive Umfragen: ${surveysammount}`
 
+let firstsurvey = document.querySelector(".surveytitle1").textContent
+let secondsurvey = document.querySelector(".surveytitle2").textContent
+let thirdsurvey = document.querySelector(".surveytitle3").textContent
+let fourthsurvey = document.querySelector(".surveytitle4").textContent
+let fifthsurvey = document.querySelector(".surveytitle5").textContent
+let sixthsurvey = document.querySelector(".surveytitle6").textContent
 
+let surveyslist = document.querySelector(".surveyslist")
+surveyslist.innerHTML = `${firstsurvey} <br> ${secondsurvey} <br> ${thirdsurvey} <br>
+${fourthsurvey} <br> ${fifthsurvey} <br> ${sixthsurvey} <br>`
 
 const survey1 = document.querySelector(".survey1")
 const survey2 = document.querySelector(".survey2")
@@ -197,4 +223,19 @@ survey6.addEventListener("submit", function(e){
 
 })
 
+const form = document.querySelector("#createnewwindow")
+const createnewtitle = document.querySelector("#createnewtitle")
+const createnewdate = document.querySelector("#createnewdate")
+const createnewcontent = document.querySelector("#createnewcontent")
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+
+    const allnews = document.querySelector(".allnews")
+    allnews.innerHTML += `<div class="newinfo">
+    <h2 class="newtitle"> ${createnewtitle.value}</h2>
+    <h2 class="newtime"> ${createnewdate.value}</h2>
+    <h2 class="newcontent"> ${createnewcontent.value}</h2>
+                        </div>`
+})
 
